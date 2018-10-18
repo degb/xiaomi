@@ -37,16 +37,16 @@ var swiper2 = (function() {
 		//		家电tab选项卡
 		Tab: function() {
 			var _this = this;
-				this.$tab_list[0].onmouseover = function(e) {
+				_this.$tab_list[0].onmouseover = function(e) {
 				e = e || window.event;
 				var target = e.target || e.srcElement;
 				if(target.nodeName == 'LI') {
-					for(var i = 0; i < _this.$tab_list[0].children.length; i++) {
+					for(var i = 0; i < 4; i++) {
 						_this.$tab_list[0].children[i].className = '';
 						_this.$tab_list[0].children[i].index = i;
 					}
 					target.className = "tab-active";
-					for(var j = 1; j < _this.$brick_list.length - 9; j++) {
+					for(var j = 1; j < 5; j++) {
 						_this.$brick_list[j].className = _this.$brick_list[j].className.replace('brick-list-active', '');
 						if(_this.$brick_list[j].className.indexOf('brick-list-hide') == -1) {
 							_this.$brick_list[j].className = _this.$brick_list[j].className + ' brick-list-hide';
@@ -57,19 +57,21 @@ var swiper2 = (function() {
 			}, 
 			
 //			智能
-			this.$tab_list[1].onmouseover = function(e) {
+			_this.$tab_list[1].onmouseover = function(e) {
 				e = e || window.event;
 				var target = e.target || e.srcElement;
+				console.log(target);
 				if(target.nodeName == 'LI') {
-					for(var i = 0; i < _this.$tab_list[1].children.length; i++) {
-						_this.$tab_list[1].children[i].className = '';
-						_this.$tab_list[1].children[i].index = i;
+					for(var m = 0; m < 4; m++) {
+						_this.$tab_list[1].children[m].className = '';
+						_this.$tab_list[1].children[m].index = m;
 					}
 					target.className = "tab-active";
-					for(var j = 5; j <10; j++) {
-						_this.$brick_list[j].className = _this.$brick_list[j].className.replace('brick-list-active', '');
-						if(_this.$brick_list[j].className.indexOf('brick-list-hide') == -1) {
-							_this.$brick_list[j].className = _this.$brick_list[j].className + ' brick-list-hide';
+					for(var n = 5; n<10; n++) {
+						console.log(_this.$brick_list);
+						_this.$brick_list[n].className = _this.$brick_list[n].className.replace('brick-list-active', '');
+						if(_this.$brick_list[n].className.indexOf('brick-list-hide') == -1) {
+							_this.$brick_list[n].className = _this.$brick_list[n].className + ' brick-list-hide';
 						}
 					}
 						_this.$brick_list[target.index + 5].className = _this.$brick_list[target.index + 5].className + ' brick-list-active';
@@ -80,7 +82,7 @@ var swiper2 = (function() {
 				e = e || window.event;
 				var target = e.target || e.srcElement;
 				if(target.nodeName == 'LI') {
-					for(var i = 0; i < _this.$tab_list[2].children.length; i++) {
+					for(var i = 0; i < 4; i++) {
 						_this.$tab_list[2].children[i].className = '';
 						_this.$tab_list[2].children[i].index = i;
 					}
@@ -99,7 +101,7 @@ var swiper2 = (function() {
 				e = e || window.event;
 				var target = e.target || e.srcElement;
 				if(target.nodeName == 'LI') {
-					for(var i = 0; i < _this.$tab_list[3].children.length; i++) {
+					for(var i = 0; i < 4; i++) {
 						_this.$tab_list[3].children[i].className = '';
 						_this.$tab_list[3].children[i].index = i;
 					}
