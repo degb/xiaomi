@@ -1,0 +1,84 @@
+<html>
+	<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>小米账号-注册</title>
+		<link rel="icon" href="img/favicon.ico" type="images/x-ico" />
+		<link href="css/base.css" rel="stylesheet">
+		<link href="css/regeister.css" rel="stylesheet">
+		<link href="//at.alicdn.com/t/font_862034_mtrncq13lo.css" rel="stylesheet">
+
+	</head>
+
+	<body>
+		<div class="warp">
+			<div class="layout">
+				<div class="regeist n-frame">
+					<div class="regeist_logo">
+						<a class="milogo" href="javascript:void(0)"></a>
+					</div>
+					<div class="regeist-title">
+						<h4 class="title_h4">注册小米帐号</h4>
+					</div>
+					<div>
+						<div class="regbox">
+							<form action="" class="register-form" onsubmit="return false">
+							<h4 class="tit_normal">用户名</h4>
+							<input type="text" placeholder="请输入用户名" class="username" name="username"/>
+								<span class="sp1"><i class="iconfont icon-iconfontxiaogantanhao"></i>用户名需为6-13位的字母或者下划线</span>
+							<h4 class="tit_normal">
+        密码
+      </h4>
+							<input type="password" placeholder="请输入密码" class="password" name="password" />
+							<div class="checkP" style="display: none;">
+							<span class="sp2"><i class="iconfont icon-iconfontxiaogantanhao"></i>不能包括空格</span><br>
+							<span class="sp3"><i class="iconfont icon-iconfontxiaogantanhao"></i>长度为8——16个字符</span><br>
+							<span class="sp4"><i class="iconfont icon-iconfontxiaogantanhao"></i>必须包含大小写字母和数字</span><br>
+							</div>
+							<button type="submit"  class="btn" name="regisiter-btn" >立即注册</button>
+							</form>
+						</div>
+
+					</div>
+					<div class="privacy_box">
+						<div class="msg">
+					<label class="n_checked">
+       <span class="agree">
+       </span>注册帐号即表示您同意并愿意遵守小米 <a href="http://www.miui.com/res/doc/eula/cn.html" class="inspect_link agreement_link" title="用户协议" target="_blank">用户协议</a>和<a href="http://www.miui.com/res/doc/privacy/cn.html" class="inspect_link privacy_link" title=" 隐私政策 " target="_blank"> 隐私政策 </a>
+      </label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="n-footer">
+			<div class="nf-link-area clearfix">
+				<ul class="lang-select-list">
+					<li>
+						<a class="lang-select-li current" href="javascript:void(0)" data-lang="zh_CN">简体</a>|</li>
+					<li>
+						<a class="lang-select-li" href="javascript:void(0)" data-lang="zh_TW">繁体</a>|</li>
+					<li>
+						<a class="lang-select-li" href="javascript:void(0)" data-lang="en">English</a>
+					</li>
+
+					|
+					<li>
+						<a class="a_critical" href="https://static.account.xiaomi.com/html/faq/faqList.html" target="_blank"><em></em>常见问题</a>
+					</li>
+
+				</ul>
+			</div>
+			<p class="nf-intro"><span>小米公司版权所有-京ICP备10046444-<a class="beianlink" target="_blank" href="#"><span><img src="img/copyright.png"></span>京公网安备11010802020134号</a>-京ICP证110507号</span>
+			</p>
+		</div>
+		<script src="js/ajax.js"></script>
+	<script src="js/register.js"></script>
+    <script>
+        register.init('.register-form');
+    </script>
+    
+	</body>
+
+	</html>

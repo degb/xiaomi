@@ -1,0 +1,508 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul,li{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: 16px;
+    font-weight: normal;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* ******************header************* */
+#header{
+    height: 100px;
+    border-bottom: 2px solid #ff6700;
+}
+#header .header-con{
+    height: 100px;
+    width: 1226px;
+    margin: 0 auto;
+}
+#header .header-con img{
+    margin-top: 26px;
+    width: 48px;
+    height: 48px;
+    display: block;
+    float: left;
+}
+#header .header-con .title{
+    float: left;
+    font-size: 28px;
+    line-height: 100px;
+    margin-left: 45px;
+    font-weight: 500;
+}
+#header .header-con .prompt{
+    float: left;
+    font-size: 12px;
+    line-height: 12px;
+    color: #757575;
+    margin-top: 50px;
+    margin-left: 16px;
+}
+#header .header-con .login_register{
+    float: right;
+    line-height: 100px;
+    font-size: 12px;
+}
+#header .header-con p span a{
+    color: #757575;
+}
+
+/* ****************main************** */
+#main{
+    background: #f5f5f5;
+    padding-top: 38px;
+}
+#main .main-con{
+    width: 1226px;
+    margin: 0 auto;
+}
+#main .main-con .goods-list{
+    background: #fff;
+
+}
+
+/* top */
+#main .main-con .top{
+    height: 70px;
+    border-bottom: 1px solid #ccc;
+}
+#main .main-con .top .check_all{
+    padding-left: 24px;
+    font-size: 14px;
+    line-height: 70px;
+    width: 86px;
+    height: 70px;
+    float: left;
+}
+#main .main-con .top .check_all i{
+    color: #ff6700;
+    vertical-align: -3px;
+    font-size: 20px;
+    margin-right: 12px;
+}
+#main .main-con .top .img{
+    width: 120px;
+    height: 70px;
+    float: left;
+}
+#main .main-con .top .name{
+    width: 380px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 14px;
+    float: left;
+}
+#main .main-con .top .unit_price{
+    text-align: right;
+    padding-right: 75px;
+
+    font-size: 14px;
+    line-height: 70px;
+    width: 84px;
+    height: 70px;
+    float: left;
+}
+#main .main-con .top .num{
+    line-height: 70px;
+    text-align: center;
+    font-size: 14px;
+    width: 150px;
+    height: 70px;
+    float: left;
+}
+#main .main-con .top .total{
+    width: 100px;
+    text-align: right;
+    line-height: 70px;
+    font-size: 14px;
+    margin-right: 81px;
+    height: 70px;
+    float: left;
+}
+#main .main-con .top .active{
+    width: 80px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 14px;
+    height: 70px;
+    float: left;
+}
+
+/* .list */
+#main .main-con .ul_body{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+#main .main-con .ul_body ul.list{
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+#main .main-con .ul_body .list .check_all{
+    padding-left: 24px;
+    font-size: 14px;
+    line-height: 86px;
+    width: 86px;
+    height: 86px;
+    float: left;
+}
+#main .main-con .ul_body .list .check_all i{
+    color: #ff6700;
+    font-size: 20px;
+    margin-right: 12px;
+}
+#main .main-con .ul_body .list .img{
+    width: 120px;
+    height: 86px;
+    float: left;
+}
+#main .main-con .ul_body .list .img img{
+    display: block;
+    line-height: 86px;
+
+}
+#main .main-con .ul_body .list .name{
+    width: 380px;
+    height: 86px;
+    line-height: 86px;
+    font-size: 18px;
+    float: left;
+}
+#main .main-con .ul_body .list .unit_price{
+    text-align: right;
+    padding-right: 75px;
+    font-size: 16px;
+    line-height: 86px;
+    width: 84px;
+    height: 86px;
+    float: left;
+}
+#main .main-con .ul_body .list .num{
+    padding-top: 25px;
+    font-size: 16px;
+    width: 150px;
+    height: 61px;
+    float: left;
+}
+#main .main-con .ul_body .list .num a{
+    transition: all 0.4s;
+    line-height: 38px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #e0e0e0;
+    float: left;
+    width: 37px;
+    height: 36px;
+}
+#main .main-con .ul_body .list .num a i{
+    font-size: 8px;
+}
+#main .main-con .ul_body .list .num a:first-child{
+    border-right: 0;
+}
+#main .main-con .ul_body .list .num a:hover{
+    background: #ccc;
+}
+#main .main-con .ul_body .list .num a:last-child{
+    border-left: 0;
+}
+#main .main-con .ul_body .list .num input{
+    float: left;
+    text-align: center;
+    width: 70px;
+    height: 36px;
+    border: 1px solid #e0e0e0;
+}
+#main .main-con .ul_body .list .total{
+    color: #ff6700;
+    width: 100px;
+    text-align: right;
+    line-height: 86px;
+    font-size: 16px;
+    margin-right: 81px;
+    height: 86px;
+    float: left;
+}
+#main .main-con .ul_body .list .active{
+    width: 80px;
+    text-align: center;
+    padding-top: 25px;
+    font-size: 16px;
+    font-weight: 900;
+    height: 61px;
+    float: left;
+}
+#main .main-con .ul_body .list .active a{
+    transition: all 0.3s;
+    cursor: pointer;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+#main .main-con .ul_body .list .active a:hover{
+    background: #e53935;
+    color: #fff;
+}
+#main .main-con .ul_body .list .sub-box,.sub-box2{
+    position: relative;
+    margin-bottom: 14px;
+    clear: both;
+    margin-left: 100px;
+    background: #f5f5f5;
+    width: 1100px;
+    height: 96px;
+}
+#main .main-con .ul_body .list .sub-box .arrow,.sub-box2 .arrow{
+    position: absolute;
+    top: -10px;
+    left: 39px;
+    width: 0;
+    height: 0;
+    border-width: 0 11px 10px;
+    border-style: dashed dashed solid;
+    border-color: transparent transparent #f5f5f5;
+    overflow: hidden;
+}
+#main .main-con .ul_body .list .sub-box .img,.sub-box2 .img{
+    height: 96px;
+    width: 130px;
+}
+#main .main-con .ul_body .list .sub-box img,.sub-box2 img{
+    margin-left: 20px;
+    margin-top: 15px;
+}
+#main .main-con .ul_body .list .sub-box .name,.sub-box2 .name{
+    height: 96px;
+}
+#main .main-con .ul_body .list .sub-box .name span,.sub-box2 span{
+    display: block;
+    width: 60px;
+    height: 18px;
+    font-size: 12px;
+    background: #e53935;
+    color: #fff;
+    line-height: 18px;
+    text-align: center;
+    margin-top: 21px;
+}
+#main .main-con .ul_body .list .sub-box .name p,.sub-box2 .name p{
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 12px;
+}
+#main .main-con .ul_body .list .sub-box .name p a,.sub-box2 .name p a{    
+    color: #333;
+}
+#main .main-con .ul_body .list .sub-box .num,.sub-box2 .num{
+    text-align: center;
+    padding-top: 35px;
+}
+#main .main-con .ul_body .list .extend-buy{
+    transition: all 0.3s;
+    margin-left: 100px;
+    padding-left: 20px;
+    display: block;
+    width: 1080px;
+    font-size: 14px;
+    color: #333;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #e0e0e0;
+}
+#main .main-con .ul_body .list .extend-buy:last-child{
+    border-top: 0;
+    margin-bottom: 13px;
+}
+#main .main-con .ul_body .list .extend-buy i{
+    font-size: 22px;
+    color: #ff6700;
+    vertical-align: -3px;
+    margin-right: 15px;
+}
+#main .main-con .ul_body .list .extend-buy a{
+    color: #ff6700;
+    margin-left: 24px;
+}
+#main .main-con .ul_body .list .extend-buy:hover{
+    background: #f5f5f5;
+}
+.img img{
+	width: 80px;
+	height: 80px;
+}
+/* 结算 */
+
+#main .main-con .clearFix{
+    width: 1226px;
+    background: #fff;
+    color: #333;
+    margin-bottom: 10px;
+    height: 50px;
+}
+#main .main-con .clearFix .left{
+    float: left;
+    color: #757575
+}
+#main .main-con .clearFix .left .goShop{
+    transition: all 0.4s;
+    font-size: 14px;
+    line-height: 50px;
+    padding-left: 32px;
+    color: #757575;
+    float: left;
+    margin-right: 5px;
+}
+#main .main-con .clearFix .left .shu{
+    color: #f6f6f6;
+    line-height: 50px;
+    margin-right: 5px;
+    float: left;
+}
+#main .main-con .clearFix .left p{
+    float: left;
+    font-size: 14px;
+    line-height: 50px;
+}
+
+#main .main-con .clearFix .left p span{
+    color: #ff6700;
+}
+#main .main-con .clearFix .right{
+    float: right;
+}
+#main .main-con .clearFix .right p{
+    float: left;
+    line-height: 50px;
+    font-size: 12px;
+    color: #ff6700;
+    margin-right: 54px;
+}
+#main .main-con .clearFix .right p span{
+    font-size: 22px;
+}
+#main .main-con .clearFix .right button{
+    cursor: pointer;
+    float: left;
+    line-height: 50px;
+    width: 202px;
+    height: 50px;
+    border:0;
+    background: #ff6700;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+}
+#main .main-con .clearFix .left .goShop:hover{
+    color: #ff6700;
+}
+#main .main-con .clearFix .right button:hover{
+    background: #e53935;
+}
+
+
+/* other */
+
+#main .other .top{
+    position: relative;
+    width: 1226px;
+    margin-top: 50px;
+    height: 50px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    border-bottom: 0;
+}
+#main .other .top h2{
+    position: absolute;
+    background: #f5f5f5;
+    top: -20px;
+    left: 400px;
+    padding: 0 61px;
+    font-size: 30px;
+    color: #757575;
+}
+#main .other .buttom{
+    overflow: hidden;
+    padding-bottom: 66px;
+}
+#main .other .buttom .other-con{
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    width: 234px;
+    height: 300px;
+    background: #fff;
+    float: left;
+    margin-left: 14px;
+    margin-bottom: 14px;
+}
+#main .other .buttom .other-con:first-child{
+    margin-left: 0;
+    background: url(../img/shopCar/con10.jpg) no-repeat center;
+}
+#main .other .buttom .other-con:nth-child(6){
+    margin-left: 0;
+}
+
+#main .other .buttom .other-con img{
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+#main .other .buttom .other-con .title{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 14px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    width:180px;
+}
+
+#main .other .buttom .other-con .price{
+    font-size: 14px;
+    font-size: 14px;
+    margin-top: 14px;
+    margin-bottom: 10px;
+    color: #ff6700;
+}
+#main .other .buttom .other-con .good{
+    font-size: 14px;
+    position: absolute;
+    line-height: 14px;
+    color: #757575;
+    bottom: 20px;
+    right: 82px;
+}
+#main .other .buttom .other-con a{
+    transition: all 0.4s;
+    position: absolute;
+    bottom: 11px;
+    left: 58px;
+    display: block;
+    width: 120px;
+    height: 28px;
+    border: 1px solid #ff6700;
+    font-size: 12px;
+    color: #ff6700;
+    line-height: 28px;  
+    display: none;
+}
+#main .other .buttom .other-con:hover a{
+    display: block;
+}
+#main .other .buttom .other-con:hover .good{
+    display: none;
+}
+#main .other .buttom .other-con a:hover{
+    background: #ff6700;
+    color: #fff;
+}

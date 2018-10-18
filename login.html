@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>小米帐号 - 登录</title>
+		<link href="css/base.css" rel="stylesheet">
+		<link href="css/login.css" rel="stylesheet">
+		<link rel="icon" href="img/favicon.ico" type="images/x-ico" />
+	</head>
+
+	<body>
+		<div id="mailPage">
+			<!--header-->
+			<div class="header">
+				<a href="https://account.xiaomi.com/pass/serviceLogin">小米网
+				</a>
+			</div>
+		</div>
+		
+			<!--banner-->
+			<div class="content">
+				<a href="https://item.mi.com/product/10000117.html" target="_parent">小米网</a>
+			</div>
+			<div class="wrap">
+				<div class="layout_panel">
+					<div class="layout">
+						<!--表单登录-->
+						<div class="nav_tabs">
+						<a class="navtab-link now" href="javascript:void(0);" data-tab="pwd">帐号登录</a>
+						<span class="line"></span>
+						<a class="navtab-link" href="javascript:void(0);" data-tab="qr">扫码登录</a>
+							
+						</div>
+					
+					<!--tab con-->
+					<div class="tabs_con clearfix">
+						<div class="login_area">
+							<form class="login-form" onsubmit="return false">
+						<!--输入框-->		
+			<input class="item_account" autocomplete="off" type="text"  id="username" placeholder="邮箱/手机号码/小米ID" name="username">
+			<input class="item_account" type="password" placeholder="密码" autocomplete="off" id="pwd" name="password" data-cip-id="pwd">
+			<button class="btnadpt" type="submit"  name="login-btn">登录</button>
+								
+							</form>
+						</div>
+						<!--手机短信注册-->
+						<div class="other_panel clearfix">
+						<div class="sms_link">
+						<a href="javascript:;" class="btnadpt btn_gray" id="ChangeLoginType">手机短信登录/注册</a></div>
+						<div class="links_area">
+			<a class="outer-link" href="https://account.xiaomi.com/pass/register">立即注册</a>	<span>|</span><a class="outer-link" href="https://account.xiaomi.com/pass/forgetPassword">忘记密码？</a>		
+						</div>
+						</div>
+						
+						<!--other_login_type-->
+						<div class="other_login_type">
+						<fieldset class="oth_type_tit">
+						<legend align="center" class="oth_type_txt">其他方式登录</legend>
+						</fieldset>
+					<div class="oth_type_links">
+                           <a class="icon_type btn_qq sns-login-link"  href="#" title="QQ登录" target="_blank"><i class="btn_sns_icontype icon_default_qq"></i></a>
+                            <a class="icon_type btn_weibo sns-login-link"  href="#" title="微博登录" target="_blank"><i class="btn_sns_icontype icon_default_weibo"></i></a>
+                            <a class="icon_type btn_alipay sns-login-link"  href="#" title="支付宝登录" target="_blank"><i class="btn_sns_icontype icon_default_alipay"></i></a>
+                            <a class="icon_type btn_weixin sns-login-link" href="#" title="微信登录" target="_blank"><i class="btn_sns_icontype icon_default_weixin"></i></a>
+                          </div>
+						</div>
+					</div>
+					
+					
+			<div class="qrcode" id="login-qrcode">
+				<img src="img/login.png" />
+				<div class="qrcode_other">
+				<p class="qr-name">使用<span>小米商城APP</span>扫一扫</p>
+				<p>小米手机可打开「设置」&gt;「小米帐号」扫码登录</p>
+				</div>
+			</div>		
+				</div>
+				</div>
+				
+			</div>
+   <!--bottom-->
+   <div class="footer">
+     <div class="nf-link-area clearfix">
+      <ul>
+        <li><a href="javascript:void(0)" data-lang="zh_CN" class="lang-select-li current">简体</a>|</li>
+        <li><a href="#" class="lang-select-li">繁体</a>|</li>
+        <li><a href="#" class="lang-select-li">English</a>|</li>
+        <li><a href="https://static.account.xiaomi.com/html/faq/faqList.html" target="_blank">常见问题</a>|</li>
+        <li><a id="msg-privacy" href="http://www.miui.com/res/doc/privacy/cn.html" target="_blank">隐私政策</a></li>
+      </ul>
+    </div>
+        <p class="nf-intro">小米公司版权所有-京ICP备10046444-<a class="beian-record-link" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020134"><span><img src="img/ghs.png"></span>京公网安备11010802020134号</a>-京ICP证110507号</p>
+   
+   </div>
+    <script src="js/ajax.js"></script>
+	<script src="js/login.js"></script>
+    <script>
+        login.init('.login-form');
+    </script>
+    
+    
+    <script>
+    	
+    	
+    	var $accounde=document.querySelector('.nav_tabs');
+    	var $con1=document.querySelector('.tabs_con');
+    	var $con2=document.querySelector('.qrcode');
+    	$accounde.onclick=function (e){
+    		e=e||window.event;
+    		var target=e.target||e.srcElement;
+    		if(target.nodeName=='A'){
+    			if(target.getAttribute('data-tab')=='qr'){
+    target.classList.add("now");
+    target.parentElement.firstElementChild.classList.remove("now");
+    				
+    			$con1.style.display='none';
+    			$con2.style.display='block';
+    			}else if(target.getAttribute('data-tab')=='pwd'){
+    				target.classList.add("now");
+    target.parentElement.lastElementChild.classList.remove("now");
+    			$con1.style.display='block';
+    			$con2.style.display='none';	
+    			}
+    		}
+    	}
+    </script>
+	</body>
+
+</html>
